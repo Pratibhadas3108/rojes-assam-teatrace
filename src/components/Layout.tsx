@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import {
   GitBranch,
   QrCode,
@@ -18,11 +18,41 @@ interface LayoutProps {
 }
 
 const navItems = [
-  { to: '/', label: 'Value Chain Ledger', icon: GitBranch },
-  { to: '/trace-simulator', label: 'Batch & QR Simulator', icon: QrCode },
-  { to: '/compliance-audit', label: 'GI & MRL Audit', icon: ShieldCheck },
-  { to: '/proposal', label: 'NESFIC-I-08 Proposal & PDFs', icon: FileText },
-  { to: '/tutorial', label: 'Tutorial & Guide', icon: HelpCircle },
+  {
+    to: '/',
+    label: 'Value Chain Ledger',
+    icon: GitBranch,
+    title: 'Assam Tea Value Chain Ledger — Farm to Cup Cryptographic Provenance (Jorhat, Dibrugarh, Tinsukia)',
+    ariaLabel: 'Navigate to Assam Tea Value Chain Ledger and Digital Product Passport explorer',
+  },
+  {
+    to: '/trace-simulator',
+    label: 'Batch & QR Simulator',
+    icon: QrCode,
+    title: 'Assam Tea Batch & QR Provenance Simulator — Real-time Outturn & Tamper Detection',
+    ariaLabel: 'Navigate to Assam Tea Batch & QR Provenance Simulator',
+  },
+  {
+    to: '/compliance-audit',
+    label: 'GI & MRL Audit',
+    icon: ShieldCheck,
+    title: 'Assam GI Origin & Export MRL Chemical Compliance Audit — TRA Tocklai Standards',
+    ariaLabel: 'Navigate to Assam GI Origin & MRL Compliance Audit',
+  },
+  {
+    to: '/proposal',
+    label: 'NESFIC-I-08 Proposal & PDFs',
+    icon: FileText,
+    title: 'NESFIC-I-08 Complete Proposal & Proof of Work by Rojes Labs (Lead Applicant: Pratibha Das Hatibaruah)',
+    ariaLabel: 'Navigate to NESFIC-I-08 Proposal, Budget Allocation, and Official PDF Downloads',
+  },
+  {
+    to: '/tutorial',
+    label: 'Tutorial & Guide',
+    icon: HelpCircle,
+    title: 'Assam TeaTrace Application Tutorial — How Digital Traceability Works Across Assam Tea Valleys',
+    ariaLabel: 'Navigate to Application Tutorial and User Guide',
+  },
 ];
 
 export const Layout: React.FC<LayoutProps> = ({ children }) => {
@@ -31,13 +61,18 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
       <header className="sticky top-0 z-30 border-b border-emerald-900/10 bg-white/95 backdrop-blur">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col gap-3 py-3 lg:flex-row lg:items-center lg:justify-between">
-            <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-900 to-emerald-500 text-white shadow-sm">
+            <Link
+              to="/"
+              title="Rojes Labs Assam TeaTrace — Digital Traceability Across Assam Tea Value Chain (NESFIC-I-08)"
+              aria-label="Rojes Labs Assam TeaTrace Home"
+              className="flex items-center gap-3 group"
+            >
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-900 to-emerald-500 text-white shadow-sm group-hover:scale-105 transition-transform">
                 <Sprout className="h-5 w-5" />
               </div>
               <div>
                 <div className="flex items-center gap-2">
-                  <span className="text-lg font-bold tracking-tight text-slate-900">
+                  <span className="text-lg font-bold tracking-tight text-slate-900 group-hover:text-emerald-900 transition-colors">
                     Rojes Labs
                   </span>
                   <span className="inline-flex items-center rounded-full bg-emerald-50 px-2.5 py-0.5 text-xs font-semibold text-emerald-800 ring-1 ring-emerald-600/20">
@@ -48,15 +83,17 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
                   Assam TeaTrace · End-to-End Digital Tea Value Chain Traceability · TRA Tocklai
                 </p>
               </div>
-            </div>
+            </Link>
 
             <div className="flex flex-wrap items-center gap-2 sm:gap-3">
               <nav aria-label="Primary Navigation" className="flex flex-wrap gap-1">
-                {navItems.map(({ to, label, icon: Icon }) => (
+                {navItems.map(({ to, label, icon: Icon, title, ariaLabel }) => (
                   <NavLink
                     key={to}
                     to={to}
                     end={to === '/'}
+                    title={title}
+                    aria-label={ariaLabel}
                     className={({ isActive }) =>
                       `inline-flex items-center gap-1.5 rounded-lg px-2.5 py-1.5 text-xs sm:text-sm font-medium transition-colors ${
                         isActive
@@ -76,7 +113,8 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
                   href="https://rojes-assam-teatrace.pages.dev/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  title="Live Demo Web Application"
+                  title="Open Rojes Labs Assam TeaTrace Live Application (Cloudflare Pages)"
+                  aria-label="Open live application at rojes-assam-teatrace.pages.dev"
                   className="inline-flex items-center gap-1 rounded-lg border border-emerald-300 bg-emerald-50 px-2 py-1.5 text-xs font-semibold text-emerald-800 hover:bg-emerald-100 transition-colors"
                 >
                   <Globe className="h-3.5 w-3.5 text-emerald-600" />
@@ -86,7 +124,8 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
                   href="https://github.com/Pratibhadas3108/rojes-assam-teatrace"
                   target="_blank"
                   rel="noopener noreferrer"
-                  title="GitHub Repository"
+                  title="View Rojes Labs Assam TeaTrace Source Code on GitHub (Pratibha Das Hatibaruah)"
+                  aria-label="Open GitHub Repository Pratibhadas3108/rojes-assam-teatrace"
                   className="inline-flex items-center gap-1 rounded-lg border border-slate-300 bg-slate-50 px-2 py-1.5 text-xs font-semibold text-slate-700 hover:bg-slate-100 transition-colors"
                 >
                   <Github className="h-3.5 w-3.5 text-slate-800" />
@@ -154,54 +193,108 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
             </div>
 
             {/* SEO & GEO Friendly Navigation Links */}
-            <div className="lg:col-span-3 space-y-2">
-              <p className="text-xs font-bold uppercase tracking-wider text-slate-900">
-                Value Chain Modules
-              </p>
-              <ul className="space-y-1.5 text-xs text-slate-600">
-                <li>
-                  <NavLink to="/" className="hover:text-emerald-800 hover:underline">
-                    Value Chain Ledger (Batch Lineage)
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/trace-simulator" className="hover:text-emerald-800 hover:underline">
-                    Batch &amp; QR Provenance Simulator
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/compliance-audit" className="hover:text-emerald-800 hover:underline">
-                    GI &amp; MRL Chemical Compliance Audit
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/proposal" className="hover:text-emerald-800 hover:underline">
-                    NESFIC-I-08 Full Proposal &amp; PDFs
-                  </NavLink>
-                </li>
-                <li>
+            <div className="lg:col-span-4 space-y-3">
+              <div>
+                <p className="text-xs font-bold uppercase tracking-wider text-slate-900">
+                  Traceability Modules &amp; Documentation
+                </p>
+                <ul className="mt-2 space-y-1.5 text-xs text-slate-600">
+                  <li>
+                    <NavLink
+                      to="/"
+                      title="Assam Tea Value Chain Ledger — Farm to Cup Traceability (Jorhat, Dibrugarh, Tinsukia, Golaghat, Sonitpur)"
+                      className="hover:text-emerald-800 hover:underline"
+                    >
+                      Value Chain Ledger (Batch Lineage &amp; Hash Integrity)
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="/trace-simulator"
+                      title="Assam Tea Batch &amp; QR Provenance Simulator — Live Outturn &amp; Fault Injection"
+                      className="hover:text-emerald-800 hover:underline"
+                    >
+                      Batch &amp; QR Provenance Simulator (Outturn Math)
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="/compliance-audit"
+                      title="Assam Geographical Indication (GI) &amp; MRL Chemical Compliance Audit"
+                      className="hover:text-emerald-800 hover:underline"
+                    >
+                      GI &amp; MRL Chemical Compliance Audit (CSV Export)
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="/proposal"
+                      title="NESFIC-I-08 Technical Proposal &amp; Official Downloadable PDFs — TRA Tocklai"
+                      className="hover:text-emerald-800 hover:underline"
+                    >
+                      NESFIC-I-08 Full Proposal &amp; Proof of Work PDFs
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="/tutorial"
+                      title="Assam TeaTrace Application Tutorial — How Digital Traceability Works Across Assam Tea Valleys"
+                      className="hover:text-emerald-800 hover:underline flex items-center gap-1 font-semibold text-emerald-700"
+                    >
+                      <HelpCircle className="h-3.5 w-3.5" />
+                      <span>Application Tutorial &amp; Interactive User Guide</span>
+                    </NavLink>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Geographic District Links (GEO & SEO Friendly) */}
+              <div className="pt-2 border-t border-slate-100">
+                <p className="text-[11px] font-bold text-slate-900 uppercase tracking-wider">
+                  Assam Tea Geographical Indication (GI) Districts
+                </p>
+                <div className="flex flex-wrap gap-1.5 mt-1.5 text-[11px]">
                   <NavLink
-                    to="/tutorial"
-                    className="hover:text-emerald-800 hover:underline flex items-center gap-1 font-semibold text-emerald-700"
+                    to="/compliance-audit"
+                    title="Jorhat District — TRA Tocklai Headquarters &amp; Central Assam Clonal Tea Estates"
+                    className="rounded-md bg-emerald-50 px-2 py-0.5 text-emerald-900 hover:bg-emerald-100 font-medium"
                   >
-                    <HelpCircle className="h-3 w-3" />
-                    <span>Application Tutorial &amp; User Guide</span>
+                    Jorhat (TRA Tocklai)
                   </NavLink>
-                </li>
-              </ul>
-              <div className="pt-2">
-                <p className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
-                  Target Coverage (Assam GI)
-                </p>
-                <p className="text-[11px] text-slate-500 leading-snug mt-1">
-                  Upper Assam (Dibrugarh, Tinsukia), Central Assam (Jorhat, Golaghat), and North Bank
-                  (Sonitpur) Small Tea Growers &amp; Bought-Leaf Factories.
-                </p>
+                  <NavLink
+                    to="/compliance-audit"
+                    title="Dibrugarh District — Upper Assam High-Yield Quality Tea Gardens"
+                    className="rounded-md bg-emerald-50 px-2 py-0.5 text-emerald-900 hover:bg-emerald-100 font-medium"
+                  >
+                    Dibrugarh
+                  </NavLink>
+                  <NavLink
+                    to="/compliance-audit"
+                    title="Tinsukia District — Small Tea Growers &amp; Bought-Leaf Factory Hub"
+                    className="rounded-md bg-emerald-50 px-2 py-0.5 text-emerald-900 hover:bg-emerald-100 font-medium"
+                  >
+                    Tinsukia
+                  </NavLink>
+                  <NavLink
+                    to="/compliance-audit"
+                    title="Golaghat District — South Bank Heritage CTC &amp; Orthodox Plantations"
+                    className="rounded-md bg-emerald-50 px-2 py-0.5 text-emerald-900 hover:bg-emerald-100 font-medium"
+                  >
+                    Golaghat
+                  </NavLink>
+                  <NavLink
+                    to="/compliance-audit"
+                    title="Sonitpur District — North Bank Brahmaputra Tea Estates"
+                    className="rounded-md bg-emerald-50 px-2 py-0.5 text-emerald-900 hover:bg-emerald-100 font-medium"
+                  >
+                    Sonitpur
+                  </NavLink>
+                </div>
               </div>
             </div>
 
             {/* Official Disclaimer Box */}
-            <div className="lg:col-span-5 rounded-xl border border-amber-200/90 bg-amber-50/70 p-4 shadow-2xs">
+            <div className="lg:col-span-4 rounded-xl border border-amber-200/90 bg-amber-50/70 p-4 shadow-2xs">
               <div className="flex items-center gap-1.5 text-amber-900 font-semibold text-xs uppercase tracking-wider">
                 <ShieldCheck className="h-4 w-4 text-amber-700" />
                 <span>Disclaimer</span>

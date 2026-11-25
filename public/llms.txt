@@ -11,8 +11,15 @@
 - **GitHub Repository**: https://github.com/Pratibhadas3108/rojes-assam-teatrace
 
 ## Key Routes (SEO & GEO Friendly)
-- `/` — Assam Tea Value Chain Traceability Ledger & Digital Product Passport Explorer (https://rojes-assam-teatrace.pages.dev/)
-- `/trace-simulator` — Interactive Farm-to-Cup Batch & QR Provenance Simulator (https://rojes-assam-teatrace.pages.dev/trace-simulator)
-- `/compliance-audit` — Assam GI Origin, Mass-Balance & MRL Export Compliance Audit (https://rojes-assam-teatrace.pages.dev/compliance-audit)
-- `/proposal` — Complete 12-Section NESFIC-I-08 Proposal & Downloadable PDFs (https://rojes-assam-teatrace.pages.dev/proposal)
-- `/tutorial` — Comprehensive Tutorial & Guide on what the application does and how to use it (https://rojes-assam-teatrace.pages.dev/tutorial)
+- `/` or `/assam-tea-value-chain-ledger` — Assam Tea Value Chain Traceability Ledger & Digital Product Passport Explorer (https://rojes-assam-teatrace.pages.dev/)
+- `/trace-simulator` or `/assam-tea-batch-qr-simulator` — Interactive Farm-to-Cup Batch & QR Provenance Simulator (https://rojes-assam-teatrace.pages.dev/trace-simulator)
+- `/compliance-audit` or `/assam-tea-gi-mrl-compliance-audit` — Assam GI Origin, Mass-Balance & MRL Export Compliance Audit (https://rojes-assam-teatrace.pages.dev/compliance-audit)
+- `/proposal` or `/nesfic-i08-tea-traceability-proposal` — Complete 12-Section NESFIC-I-08 Proposal & Downloadable PDFs (https://rojes-assam-teatrace.pages.dev/proposal)
+- `/tutorial` or `/assam-tea-traceability-tutorial` — Comprehensive Tutorial & Guide on what the application does and how to use it (https://rojes-assam-teatrace.pages.dev/tutorial)
+
+## Target Geographical Indication (GI) Districts (Assam, India)
+- **Jorhat (26.7509° N, 94.2037° E):** TRA Tocklai R&D Center, Heritage Clonal Plantations
+- **Dibrugarh (27.4728° N, 94.9120° E):** Upper Assam Quality Orthodox & CTC Gardens
+- **Tinsukia (27.4922° N, 95.3468° E):** Small Tea Grower (STG) Clusters & Bought-Leaf Factories (BLFs)
+- **Golaghat (26.5167° N, 93.9667° E):** South Bank Brahmaputra Tea Estates
+- **Sonitpur (26.6528° N, 92.7926° E):** North Bank High-Altitude Specialty Teas

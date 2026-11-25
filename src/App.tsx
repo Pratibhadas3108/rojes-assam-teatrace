@@ -12,10 +12,15 @@ export function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<Dashboard />} />
+          <Route path="/assam-tea-value-chain-ledger" element={<Dashboard />} />
           <Route path="/trace-simulator" element={<Simulator />} />
+          <Route path="/assam-tea-batch-qr-simulator" element={<Simulator />} />
           <Route path="/compliance-audit" element={<Analytics />} />
+          <Route path="/assam-tea-gi-mrl-compliance-audit" element={<Analytics />} />
           <Route path="/proposal" element={<Proposal />} />
+          <Route path="/nesfic-i08-tea-traceability-proposal" element={<Proposal />} />
           <Route path="/tutorial" element={<Tutorial />} />
+          <Route path="/assam-tea-traceability-tutorial" element={<Tutorial />} />
         </Routes>
       </Layout>
     </BrowserRouter>

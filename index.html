@@ -59,6 +59,35 @@
         "@context": "https://schema.org",
         "@graph": [
           {
+            "@type": "WebSite",
+            "@id": "https://rojes-assam-teatrace.pages.dev/#website",
+            "url": "https://rojes-assam-teatrace.pages.dev/",
+            "name": "Rojes Labs | Assam TeaTrace",
+            "description": "End-to-End Digital Tea Traceability across the Assam Tea Value Chain (NESFIC-I-08, TRA Tocklai)",
+            "publisher": {
+              "@id": "https://rojes-assam-teatrace.pages.dev/#organization"
+            },
+            "inLanguage": "en-IN"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "@id": "https://rojes-assam-teatrace.pages.dev/#navigation",
+            "name": [
+              "Assam Tea Value Chain Ledger",
+              "Batch & QR Provenance Simulator",
+              "Assam GI & MRL Chemical Compliance Audit",
+              "NESFIC-I-08 Proposal & Proof of Work",
+              "Assam TeaTrace Application Tutorial & User Guide"
+            ],
+            "url": [
+              "https://rojes-assam-teatrace.pages.dev/",
+              "https://rojes-assam-teatrace.pages.dev/trace-simulator",
+              "https://rojes-assam-teatrace.pages.dev/compliance-audit",
+              "https://rojes-assam-teatrace.pages.dev/proposal",
+              "https://rojes-assam-teatrace.pages.dev/tutorial"
+            ]
+          },
+          {
             "@type": "Organization",
             "@id": "https://rojes-assam-teatrace.pages.dev/#organization",
             "name": "Rojes Labs",
@@ -69,17 +98,66 @@
             ],
             "founder": {
               "@type": "Person",
-              "name": "Pratibha Das Hatibaruah"
+              "name": "Pratibha Das Hatibaruah",
+              "jobTitle": "Lead Applicant & Founder",
+              "nationality": "Indian"
             },
             "address": {
               "@type": "PostalAddress",
               "addressRegion": "Assam",
               "addressCountry": "IN"
             },
-            "areaServed": {
-              "@type": "AdministrativeArea",
-              "name": "Assam, India"
-            }
+            "areaServed": [
+              {
+                "@type": "AdministrativeArea",
+                "name": "Assam, India"
+              },
+              {
+                "@type": "City",
+                "name": "Jorhat",
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": 26.7509,
+                  "longitude": 94.2037
+                }
+              },
+              {
+                "@type": "City",
+                "name": "Dibrugarh",
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": 27.4728,
+                  "longitude": 94.9120
+                }
+              },
+              {
+                "@type": "City",
+                "name": "Tinsukia",
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": 27.4922,
+                  "longitude": 95.3468
+                }
+              },
+              {
+                "@type": "City",
+                "name": "Golaghat",
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": 26.5167,
+                  "longitude": 93.9667
+                }
+              },
+              {
+                "@type": "City",
+                "name": "Sonitpur",
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": 26.6528,
+                  "longitude": 92.7926
+                }
+              }
+            ]
           },
           {
             "@type": "SoftwareApplication",
