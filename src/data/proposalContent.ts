@@ -57,8 +57,9 @@ export const PROPOSAL_METADATA = {
   sponsor: 'Tea Research Association (TRA) – Tocklai',
   organization: 'Rojes Labs',
   leadApplicant: 'Pratibha Das Hatibaruah',
-  demoVideoUrl: 'https://rojeslabs.in/demo-nesfic-i-08',
-  productUrl: 'https://rojeslabs.in/',
+  demoVideoUrl: 'https://rojes-assam-teatrace.pages.dev/demo',
+  productUrl: 'https://rojes-assam-teatrace.pages.dev/',
+  githubUrl: 'https://github.com/Pratibhadas3108/rojes-assam-teatrace',
 };
 
 export const PROPOSAL_SECTIONS: ProposalSection[] = [

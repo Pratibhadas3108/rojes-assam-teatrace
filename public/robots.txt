@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rojeslabs.in/sitemap.xml
+Sitemap: https://rojes-assam-teatrace.pages.dev/sitemap.xml

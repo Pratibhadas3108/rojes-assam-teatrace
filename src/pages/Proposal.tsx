@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Check, Copy, Download, ExternalLink, FileCheck2 } from 'lucide-react';
+import { Check, Copy, Download, ExternalLink, FileCheck2, Github, Globe } from 'lucide-react';
 import { BUDGET_ALLOCATION, PROPOSAL_METADATA, PROPOSAL_SECTIONS } from '../data/proposalContent';
 
 function countWords(text: string): number {
@@ -53,17 +53,39 @@ export const Proposal: React.FC = () => {
           </div>
         </div>
 
-        <div className="mt-5 grid gap-3 border-t border-slate-100 pt-4 text-xs text-slate-600 sm:grid-cols-2">
+        <div className="mt-5 grid gap-3 border-t border-slate-100 pt-4 text-xs text-slate-600 sm:grid-cols-3">
           <div className="flex items-center gap-2">
-            <ExternalLink className="h-3.5 w-3.5 text-emerald-700" />
-            <span>
-              Demo / Product Video URL: <code>{PROPOSAL_METADATA.demoVideoUrl}</code>
+            <Globe className="h-4 w-4 text-emerald-700 shrink-0" />
+            <span className="truncate">
+              Live Web App:{' '}
+              <a
+                href={PROPOSAL_METADATA.productUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-emerald-700 hover:underline"
+              >
+                {PROPOSAL_METADATA.productUrl}
+              </a>
             </span>
           </div>
           <div className="flex items-center gap-2">
-            <ExternalLink className="h-3.5 w-3.5 text-emerald-700" />
-            <span>
-              Product / Website URL: <code>{PROPOSAL_METADATA.productUrl}</code>
+            <Github className="h-4 w-4 text-slate-800 shrink-0" />
+            <span className="truncate">
+              GitHub Repo:{' '}
+              <a
+                href={PROPOSAL_METADATA.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-slate-800 hover:underline"
+              >
+                Pratibhadas3108/rojes-assam-teatrace
+              </a>
+            </span>
+          </div>
+          <div className="flex items-center gap-2">
+            <ExternalLink className="h-3.5 w-3.5 text-emerald-700 shrink-0" />
+            <span className="truncate">
+              Demo / Video URL: <code>{PROPOSAL_METADATA.demoVideoUrl}</code>
             </span>
           </div>
         </div>
