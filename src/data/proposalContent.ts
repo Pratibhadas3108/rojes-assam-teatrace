@@ -99,7 +99,7 @@ Core modules include:
 - QA / Export Auditor: Uploads or syncs MRL test results, reviews district-level GI and mass-balance alerts, and exports audit-ready CSV/JSON dossiers.
 - Buyer / Regulator: Scans the chest or retail QR code to inspect the immutable farm-to-cup timeline.
 
-As Proof of Work, Rojes Labs has built a live, interactive web application prototype (Assam TeaTrace) featuring: (a) a Value Chain Traceability Ledger displaying multi-district Assam tea batches across Jorhat, Dibrugarh, Tinsukia, Golaghat, and Sonitpur with full 5-stage SHA-256 hash chains; (b) an interactive Batch & QR Provenance Simulator that models green-leaf-to-made-tea outturn ratios, mints a live QR Digital Product Passport, and demonstrates automated anomaly detection when unauthorized leaf mixing (outturn >25%) or MRL exceedance is injected; and (c) a GI & MRL Compliance Audit dashboard with exportable reports. Full architecture diagrams, simulation outputs, and UI evidence are packaged in the accompanying Proof of Work PDF.`,
+As Proof of Work, Rojes Labs has built a live, interactive web application prototype (Assam TeaTrace) featuring: (a) a Value Chain Traceability Ledger displaying multi-district Assam tea batches across Jorhat, Dibrugarh, Tinsukia, Golaghat, and Sonitpur with full 5-stage SHA-256 hash chains; (b) an interactive Batch & QR Provenance Simulator that models green-leaf-to-made-tea outturn ratios, mints a live QR Digital Product Passport, and demonstrates automated anomaly detection when unauthorized leaf mixing (outturn Greater Than 25%) or MRL exceedance is injected; and (c) a GI & MRL Compliance Audit dashboard with exportable reports. Full architecture diagrams, simulation outputs, and UI evidence are packaged in the accompanying Proof of Work PDF.`,
   },
   {
     id: 4,
@@ -171,14 +171,14 @@ Critical specialist skills include offline conflict-free data synchronization in
       'Explain development testing, proposed performance/quality measures and evidence of progress. Include relevant prior research, pilots, deployments or product evidence.',
     content: `Testing and validation span three rigorous tiers:
 1. Unit & Cryptographic Integrity Testing: Automated verification of SHA-256 hash-chain continuity across lot splits and blends, ensuring any retrospective weight or origin edit invalidates the downstream Merkle root.
-2. Mass-Balance & Anomaly Simulation: Bench testing across 1,000+ simulated STG-to-BLF batch scenarios verifying 100% detection of synthetic outturn spikes (>25% recovery), missing custody stages, and MRL exceedance holds.
+2. Mass-Balance & Anomaly Simulation: Bench testing across 1,000+ simulated STG-to-BLF batch scenarios verifying 100% detection of synthetic outturn spikes (Greater Than 25% recovery), missing custody stages, and MRL exceedance holds.
 3. Offline Sync & Field Usability Testing: Simulating 72-hour network blackouts with queued weighbridge events to confirm zero data loss upon reconnection.
 
 Key performance measures (KPIs):
-- End-to-end lot reconciliation accuracy: >=99.5% mass-balance accountability.
-- Anomaly detection latency: <2 seconds from factory bagging entry.
-- Offline intake capture time: <15 seconds per STG leaf lot.
-- Audit dossier generation: <5 seconds for export-ready MRL + GI provenance packs.
+- End-to-end lot reconciliation accuracy: Greater Than or equal to 99.5% mass-balance accountability.
+- Anomaly detection latency: Smaller than 2 seconds from factory bagging entry.
+- Offline intake capture time: Smaller than 15 seconds per STG leaf lot.
+- Audit dossier generation: Smaller than 5 seconds for export-ready MRL + GI provenance packs.
 
 Evidence of progress is demonstrated in the live Rojes Labs Assam TeaTrace prototype (Value Chain Ledger, Batch & QR Simulator, and GI/MRL Audit modules) and the accompanying Proof of Work PDF containing simulation charts and schema verification outputs.`,
   },
@@ -221,7 +221,7 @@ Dependencies rely on proven open-source foundations (React, TypeScript, FastAPI,
 - IP Filing, GS1 Standards & Contingency: ₹2.00 Lakhs (5%).
 
 Key risks and mitigations:
-- Low digital literacy at STG sheds: Mitigated via bilingual Assamese/English icon-driven UI, pre-printed QR grower cards, and <15-second weighbridge capture.
+- Low digital literacy at STG sheds: Mitigated via bilingual Assamese/English icon-driven UI, pre-printed QR grower cards, and Smaller than 15-second weighbridge capture.
 - Intermittent rural connectivity: Mitigated via full offline-first local storage and automatic background sync.
 - Weight manipulation or bypassed entries: Mitigated by direct serial/BLE scale capture and automated mass-balance variance alerts.
 

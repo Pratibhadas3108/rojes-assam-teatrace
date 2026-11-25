@@ -351,8 +351,8 @@ def build_pow_pdf(c1, c2, dpp_hw, shots):
     story.append(
         Paragraph(
             'Upon NESFIC-I-08 selection, Rojes Labs will conduct a 4-week parallel shadow pilot across 1 Bought-Leaf '
-            'Factory (10-15 STGs) and 1 heritage estate in Jorhat/Dibrugarh, benchmarking >=99.5% mass-balance '
-            'reconciliation, <15 s offline STG intake time, and <5 s export MRL + GI audit dossier generation.',
+            'Factory (10-15 STGs) and 1 heritage estate in Jorhat/Dibrugarh, benchmarking Greater Than or equal to 99.5% mass-balance '
+            'reconciliation, Smaller than 15 s offline STG intake time, and Smaller than 5 s export MRL + GI audit dossier generation.',
             body_style,
         )
     )
