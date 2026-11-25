@@ -16,6 +16,7 @@
 ## 🌐 Quick Links & Access
 
 - **Live Web Application:** [https://rojes-assam-teatrace.pages.dev/](https://rojes-assam-teatrace.pages.dev/)
+- **Tutorial & Interactive Guide:** [https://rojes-assam-teatrace.pages.dev/tutorial](https://rojes-assam-teatrace.pages.dev/tutorial)
 - **GitHub Repository:** [https://github.com/Pratibhadas3108/rojes-assam-teatrace](https://github.com/Pratibhadas3108/rojes-assam-teatrace)
 - **Full Proposal & PDF Downloads:** [https://rojes-assam-teatrace.pages.dev/proposal](https://rojes-assam-teatrace.pages.dev/proposal)
 

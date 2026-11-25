@@ -4,6 +4,7 @@ import { Dashboard } from './pages/Dashboard';
 import { Simulator } from './pages/Simulator';
 import { Analytics } from './pages/Analytics';
 import { Proposal } from './pages/Proposal';
+import { Tutorial } from './pages/Tutorial';
 
 export function App() {
   return (
@@ -14,6 +15,7 @@ export function App() {
           <Route path="/trace-simulator" element={<Simulator />} />
           <Route path="/compliance-audit" element={<Analytics />} />
           <Route path="/proposal" element={<Proposal />} />
+          <Route path="/tutorial" element={<Tutorial />} />
         </Routes>
       </Layout>
     </BrowserRouter>

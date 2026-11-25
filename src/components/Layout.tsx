@@ -10,6 +10,7 @@ import {
   Globe,
   ExternalLink,
   MapPin,
+  HelpCircle,
 } from 'lucide-react';
 
 interface LayoutProps {
@@ -21,6 +22,7 @@ const navItems = [
   { to: '/trace-simulator', label: 'Batch & QR Simulator', icon: QrCode },
   { to: '/compliance-audit', label: 'GI & MRL Audit', icon: ShieldCheck },
   { to: '/proposal', label: 'NESFIC-I-08 Proposal & PDFs', icon: FileText },
+  { to: '/tutorial', label: 'Tutorial & Guide', icon: HelpCircle },
 ];
 
 export const Layout: React.FC<LayoutProps> = ({ children }) => {
@@ -175,6 +177,15 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
                 <li>
                   <NavLink to="/proposal" className="hover:text-emerald-800 hover:underline">
                     NESFIC-I-08 Full Proposal &amp; PDFs
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/tutorial"
+                    className="hover:text-emerald-800 hover:underline flex items-center gap-1 font-semibold text-emerald-700"
+                  >
+                    <HelpCircle className="h-3 w-3" />
+                    <span>Application Tutorial &amp; User Guide</span>
                   </NavLink>
                 </li>
               </ul>
