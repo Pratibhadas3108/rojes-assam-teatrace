@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Check, Copy, Download, ExternalLink, FileCheck2, Github, Globe } from 'lucide-react';
+import { Check, Copy, Download, ExternalLink, FileCheck2, FileText, Github, Globe } from 'lucide-react';
 import { BUDGET_ALLOCATION, PROPOSAL_METADATA, PROPOSAL_SECTIONS } from '../data/proposalContent';
 
 function countWords(text: string): number {
@@ -33,11 +33,11 @@ export const Proposal: React.FC = () => {
             </p>
           </div>
 
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap gap-2.5">
             <a
               href="/docs/Rojes_Labs_NESFIC-I-08_Proposal.pdf"
               download
-              className="inline-flex items-center gap-2 rounded-xl bg-emerald-700 px-4 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-emerald-800"
+              className="inline-flex items-center gap-2 rounded-xl bg-emerald-700 px-3.5 py-2 text-xs sm:text-sm font-semibold text-white shadow-xs hover:bg-emerald-800"
             >
               <Download className="h-4 w-4" />
               <span>Download Proposal PDF</span>
@@ -45,10 +45,18 @@ export const Proposal: React.FC = () => {
             <a
               href="/docs/Rojes_Labs_NESFIC-I-08_Proof_of_Work.pdf"
               download
-              className="inline-flex items-center gap-2 rounded-xl border border-emerald-700 bg-emerald-50 px-4 py-2.5 text-sm font-semibold text-emerald-900 hover:bg-emerald-100"
+              className="inline-flex items-center gap-2 rounded-xl border border-emerald-700 bg-emerald-50 px-3.5 py-2 text-xs sm:text-sm font-semibold text-emerald-900 hover:bg-emerald-100"
             >
               <FileCheck2 className="h-4 w-4" />
               <span>Download Proof of Work PDF</span>
+            </a>
+            <a
+              href="/docs/Rojes_Labs_NESFIC-I-08_Proposal_CopyPaste.txt"
+              download
+              className="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-3.5 py-2 text-xs sm:text-sm font-semibold text-slate-700 hover:bg-slate-50 shadow-2xs"
+            >
+              <FileText className="h-4 w-4 text-emerald-700" />
+              <span>Copy/Paste TXT File</span>
             </a>
           </div>
         </div>
