@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.tmp_pdf_assets/
+scripts/__pycache__/
+.DS_Store
+*.tsbuildinfo
+.env

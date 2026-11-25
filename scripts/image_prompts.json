@@ -1,0 +1,32 @@
+[
+  {
+    "id": "curr_vs_prop",
+    "filename": "diag_current_vs_proposed.png",
+    "title": "Current Fragmented Workflow vs. Assam TeaTrace (NESFIC-I-08)",
+    "prompt": "A high-impact 16:9 widescreen technological architectural infographic on a clean white and light-gray blueprint grid background illustrating END-TO-END DIGITAL TRACEABILITY OF ASSAM TEA: CURRENT WORKFLOW VS. ASSAM TEATRACE. The top header features bold dark navy typography with subtitle Transforming Fragmented Paper Challans into Cryptographic Farm-to-Cup Provenance. The layout presents two horizontal comparison rows: TOP ROW (CURRENT GAPS in crimson/red badges): 1) STG Shed (Paper challan & manual weight) -> 2) Transport (Mixed unlabelled leaf sacks) -> 3) BLF / Estate (Disconnected ERP, no outturn check) -> 4) Export / Audit (Retrospective MRL & GI lookup). BOTTOM ROW (ASSAM TEATRACE PROPOSED in emerald green & cyan badges): 1) Offline STG App (GPS + BLE scale + QR bag tag) -> 2) Custody Transit (Geo-tagged lot + SHA-256 hash) -> 3) Mass-Balance Engine (21%-25% outturn & split/blend DAG) -> 4) Digital Passport & Audit (MRL/GI vault + GS1 QR passport). Includes metric callout badges: 99.5% Mass-Balance, <15s Offline Capture, Zero Leaf Substitution. Clean 2D flat vector aesthetic, crisp borders, dark navy, emerald green, cyan, and amber accents, ultra-sharp typography."
+  },
+  {
+    "id": "user_journey",
+    "filename": "diag_user_journey.png",
+    "title": "Assam TeaTrace User Journey & Custody Workflow",
+    "prompt": "A structured 16:9 widescreen technological architectural infographic on a clean white and light-gray blueprint grid background illustrating ASSAM TEATRACE USER JOURNEY & CUSTODY WORKFLOW across four connected personas. The header displays bold dark navy typography with subtitle Four Connected Personas from Small Tea Grower Shed to Global Export Buyer. Four horizontal color-coded swimlane rows with sharp 2D vector icons and arrows: 1) STG / FIELD CLERK (Emerald Green): Scan Grower QR (ID & GPS) -> Weigh Green Leaf (BLE/USB) -> Print Bag QR (Offline Queue); 2) BLF / ESTATE MANAGER (Royal Blue / Cyan): Gate Scan Intake (Verify Lot) -> Process Stages (Wither, Roll, Dry) -> Outturn Guard (21%-25% Check); 3) QA / LAB OFFICER (Amber / Gold): Sync MRL Report (TRA/NABL LIMS) -> Review Alerts (Hold/Release) -> Certify Assam GI (Sign Root Hash); 4) BUYER / REGULATOR (Deep Navy): Scan Chest QR (GS1 Digital Link) -> Inspect Timeline (5-Stage Hashes) -> Export Dossier (CSV/PDF Audit). Clean 2D flat vector graphic, crisp borders, ultra-sharp typography."
+  },
+  {
+    "id": "architecture",
+    "filename": "diag_architecture.png",
+    "title": "Assam TeaTrace Hybrid Edge-Cloud & Cryptographic Architecture",
+    "prompt": "A visionary 16:9 widescreen technological architectural infographic on a clean white and light-gray blueprint grid background illustrating ASSAM TEATRACE SYSTEM ARCHITECTURE. The header features bold dark navy typography with subtitle Offline-First Edge Capture, GS1 EPCIS 2.0 Ledger & Physics-Backed Mass-Balance Guard. Four structured vertical pillar panels connected left-to-right by glowing data flow arrows: 1) EDGE & FIELD LAYER (Emerald Green): Offline Android PWA (IndexedDB 72h Queue), BLE/RS-232 Weighbridge Adapter, Bluetooth Thermal QR Label Printer; 2) CORE API & LEDGER (Royal Blue / Cyan): FastAPI + Node.js REST/Webhook API, PostgreSQL GS1 EPCIS 2.0 Split/Blend DAG, Append-Only SHA-256 Merkle Custody Chain; 3) INTELLIGENCE & RULES GUARD (Amber / Gold): Deterministic Mass-Balance Engine (21%-25% Outturn), Isolation Forest Anomaly Detector (Yield & GPS), Automated Quarantine Triggers; 4) INTEGRATIONS & CLOUD (Deep Navy): TRA Tocklai / NABL LIMS Parser, Tea Board GI & Auction Connectors, India-Region Cloud (TLS 1.3 + AES-256 + RBAC). Clean 2D flat vector aesthetic, crisp lines, ultra-sharp typography."
+  },
+  {
+    "id": "gantt",
+    "filename": "diag_gantt.png",
+    "title": "24-Week Development & Assam Shadow Pilot Roadmap",
+    "prompt": "A master 16:9 widescreen technological roadmap infographic on a clean white and light-gray blueprint grid background illustrating THE 24-WEEK EXECUTION & VALIDATION ROADMAP (NESFIC-I-08). The header displays bold dark navy typography with subtitle From TRA Tocklai Field Discovery to Assam Shadow Pilot Validation. Clean horizontal 5-phase Gantt timeline across Weeks 1 to 24: PHASE 1 (W1-W4, Deep Navy): Field Discovery & EPCIS Schema; PHASE 2 (W5-W10, Emerald Green): Core Ledger, APIs & Offline PWA; PHASE 3 (W11-W16, Cyan): Blending DAG, MRL Vault & GS1 QR Passports; PHASE 4 (W17-W20, Royal Blue): Bench Stress Testing & Security Audit (50k+ Events); Highlighted vertical milestone marker at WEEK 20: SOLUTION VALIDATION READY; PHASE 5 (W21-W24, Amber / Gold): Assam Shadow Pilot in Jorhat & Dibrugarh (1 BLF + 15 STGs + 1 Heritage Estate). Clean 2D flat vector aesthetic, crisp timeline bars, sharp technical typography."
+  },
+  {
+    "id": "dpp_hardware",
+    "filename": "diag_dpp_hardware.png",
+    "title": "Digital Product Passport & Rugged Field Hardware Kit",
+    "prompt": "A high-impact 16:9 widescreen technological product and hardware infographic on a clean white and light-gray blueprint grid background illustrating DIGITAL PRODUCT PASSPORT & RUGGED FIELD HARDWARE KIT. The header displays bold dark navy typography with subtitle Tamper-Resistant Weighbridge Capture to Verified Farm-to-Cup QR Scan. Two balanced side-by-side panels: LEFT PANEL (Emerald Green & Navy): Mobile Smartphone Screen Mockup showing ASSAM GI VERIFIED, Batch ASM-JRT-2026-0841, Origin Tocklai-Cinnamara STG Cluster Jorhat, Grade Second Flush Orthodox-FTGFOP1, Mass-Balance 4,200 kg leaf -> 966 kg tea (23.0% Outturn), MRL Status PASS (TRA Tocklai / EU-MRL), Root Hash 0x9f4c...e81b, with a crisp QR code badge. RIGHT PANEL (Amber & Royal Blue): Rugged STG Shed & BLF Hardware Kit with 3 connected vector modules: 1) Digital Weighbridge + BLE/RS-232 Adapter, 2) Offline Android PWA Tablet (Bilingual Assamese/English, 72h offline queue), 3) Bluetooth Thermal QR Printer (Weather-resistant leaf bag & tea chest tags). Clean 2D flat vector aesthetic, ultra-sharp typography."
+  }
+]

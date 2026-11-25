@@ -1,0 +1,15 @@
+# Rojes Labs — Assam TeaTrace (NESFIC-I-08)
+
+> End-to-end digital traceability platform for the Assam tea value chain, developed for NESFIC 2026 Problem Statement NESFIC-I-08 (Tea Research Association – Tocklai).
+
+## Lead Applicant & Organization
+- **Lead Applicant**: Pratibha Das Hatibaruah
+- **Organization**: Rojes Labs
+- **Region**: Assam, India (IN-AS)
+- **Challenge**: North East Seva First Innovation Challenge (NESFIC) 2026 — NESFIC-I-08
+
+## Key Routes
+- `/` — Assam Tea Value Chain Traceability Ledger & Digital Product Passport Explorer
+- `/trace-simulator` — Interactive Farm-to-Cup Batch & QR Provenance Simulator
+- `/compliance-audit` — Assam GI Origin, Mass-Balance & MRL Export Compliance Audit
+- `/proposal` — Complete 12-Section NESFIC-I-08 Proposal & Downloadable PDFs (Proposal + Proof of Work)

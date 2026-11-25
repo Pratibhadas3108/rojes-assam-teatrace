@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="teaTraceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#teaTraceGrad)" />
+  <!-- Stylized Assam Tea Leaf -->
+  <path d="M16 44 C16 26, 28 15, 45 15 C45 31, 33 44, 16 44 Z" fill="#ecfdf5" opacity="0.95" />
+  <path d="M16 44 L38 22" stroke="#065f46" stroke-width="2.2" stroke-linecap="round" />
+  <!-- Traceability Chain & QR Node Motif -->
+  <rect x="35" y="35" width="15" height="15" rx="3.5" fill="#064e3b" stroke="#a7f3d0" stroke-width="1.8" />
+  <rect x="38.5" y="38.5" width="3.2" height="3.2" rx="0.6" fill="#34d399" />
+  <rect x="43.3" y="38.5" width="3.2" height="3.2" rx="0.6" fill="#a7f3d0" />
+  <rect x="38.5" y="43.3" width="3.2" height="3.2" rx="0.6" fill="#a7f3d0" />
+  <rect x="43.3" y="43.3" width="3.2" height="3.2" rx="0.6" fill="#34d399" />
+</svg>
